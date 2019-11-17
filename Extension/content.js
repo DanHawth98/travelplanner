@@ -10,6 +10,8 @@ var waitForResults = function () {
 }
 
 function watchList( watchElm ) {
+    alert(showingTimer);
+    clearInterval( showingTimer );
 
     const targetNode = watchElm;
 
@@ -33,26 +35,13 @@ function watchList( watchElm ) {
 
     // addIconToListings();
 
-    clearInterval( showing );
-
 }
 
 
 function addIconToListings() {
 
-    
-    var x = document.getElementsByClassName("EcoTicketWrapper_itineraryContainer__1VGlu");
-    
-    for( let elm of x ) {
-
-        var node = document.createElement("P");                 // Create a <li> node
-        var textnode = document.createTextNode("Test");
-        node.appendChild(textnode); 
-        elm.appendChild(node);
-
-    }
 
 }
 
 // Init Script
-var showing =  setInterval( waitForResults, 1000 );
+var showingTimer =  setInterval( waitForResults, 1000 );

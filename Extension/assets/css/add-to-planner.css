@@ -1,0 +1,22 @@
+.travel-add-flight {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(71, 150, 40);
+    line-height: 21px;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.travel-add-flight:hover {
+    background-color: rgb(118, 206, 84);
+}
+
+.addicon-item-added.travel-add-flight {
+    background-color: orangered;
+}
